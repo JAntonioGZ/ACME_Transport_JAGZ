@@ -90,7 +90,7 @@ class MainActivity : AppCompatActivity() {
                     mutableListDrivers.removeAt(i)
                     mutableListShipmentEven.removeAt(i)
                     countTotal++
-                    Log.i("InfoString", mutableListComplete.toString())
+                    Log.i("DatosString", mutableListComplete.toString())
                     continue@outer
                 }
                 else if (mutableListDriversNumberConsonants[i]>(sumConsonants/arrayDrivers.size) && mutableListShipmentOdd.size>0){
@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
                     mutableListDrivers.removeAt(i)
                     mutableListShipmentOdd.removeAt(mutableListShipmentOdd.size-1)
                     countTotal++
-                    Log.i("InfoString", mutableListComplete.toString())
+                    Log.i("DatosString", mutableListComplete.toString())
                     continue@outer
                 }
                 else if (mutableListShipmentRare.size>0){
@@ -106,7 +106,7 @@ class MainActivity : AppCompatActivity() {
                     mutableListDrivers.removeAt(i)
                     mutableListShipmentRare.removeAt(mutableListShipmentRare.size-1)
                     countTotal++
-                    Log.i("InfoString", mutableListComplete.toString())
+                    Log.i("DatosString", mutableListComplete.toString())
                     continue@outer
                 }
             }
